@@ -34,7 +34,8 @@ class Queue{
             cout<<"Queue is empty";
         }
         else{
-            x = q[front++];
+            front++;
+            x = q[front];
         }
         return x;
     }
@@ -54,6 +55,7 @@ int main(){
     p.enquee(8) ;
     p.enquee(5) ;
     p.enquee(7) ;
+    p.display();
     p.dequeue();
     p.display();
 
